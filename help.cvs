@@ -15,12 +15,11 @@ _____
 #This?
  SELECT
     A.filling_date AS FILL_DATE
-  FROM `stable-arch-295502.STOCK_DATA.Company_Facts` AS A
-  ORDER BY filling_date DESC
+    FROM `stable-arch-295502.STOCK_DATA.Company_Facts` AS A
+    ORDER BY filling_date DESC
 
 #Unless This better?
 
 
-#SELECT filling_date FROM `stable-arch-295502.STOCK_DATA.Balance_Sheet_Data`
-
-ORDER BY filling_date DESC
+SELECT filling_date FROM `stable-arch-295502.STOCK_DATA.Balance_Sheet_Data`
+   ORDER BY filling_date DESC
