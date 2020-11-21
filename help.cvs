@@ -1,0 +1,26 @@
+
+##I'm having trouble creating a new table. If only I kept count of how many methods I tried on BQ but always received errors.
+#I know you said don't put SELECT *... I'm not sure what to put to gather all information from both tables into one.
+
+
+SELECT * FROM
+   `stable-arch-295502.STOCK_DATA.Company_Facts` AS A
+ , `stable-arch-295502.STOCK_DATA.Balance_Sheet_Data`
+
+#I think I need to create a join between the two above areas
+ (join by "row" since that's the only common field they have?)
+
+_____
+
+#This?
+ SELECT
+    A.filling_date AS FILL_DATE
+  FROM `stable-arch-295502.STOCK_DATA.Company_Facts` AS A
+  ORDER BY filling_date DESC
+
+#Unless This better?
+
+
+#SELECT filling_date FROM `stable-arch-295502.STOCK_DATA.Balance_Sheet_Data`
+
+ORDER BY filling_date DESC
